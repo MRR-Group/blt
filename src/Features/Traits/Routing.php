@@ -64,7 +64,7 @@ trait Routing
      */
     public function responseShouldHaveStatusAndContainJson(int $status, string $key, string $value): void
     {
-        $this->aResponseStatusCodeShouldBe($status);
+        $this->aResponseShouldHaveStatus($status);
         $this->responseShouldContainJsonWithKeyAndValue($key, $value);
     }
 
